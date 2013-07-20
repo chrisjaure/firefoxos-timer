@@ -48,3 +48,11 @@ button {
 	text-decoration: none;
 	outline: none;
 }
+
+.timer-progress {
+	fill: #ca0059;
+}
+
+svg {
+	display: block;
+}

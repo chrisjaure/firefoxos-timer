@@ -25,3 +25,13 @@ if(installBtn) {
 
 	}
 }
+
+var addTimerForm = document.getElementById('add-timer');
+addTimerForm.addEventListener('submit', function(e) {
+	e.preventDefault();
+	addTimer(addTimerForm['endTime'].value);
+});
+
+function addTimer (endTime) {
+	new Timer(endTime, document.getElementById('content'));
+}
